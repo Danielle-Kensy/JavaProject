@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="CharacterView">
+  <grid id="27dc6" binding="Main" layout-manager="GridLayoutManager" row-count="5" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="20" bottom="20" right="20"/>
+    <constraints>
+      <xy x="105" y="5" width="584" height="338"/>
+    </constraints>
+    <properties>
+      <background color="-6174005"/>
+      <foreground color="-4519674"/>
+    </properties>
+    <border type="empty">
+      <font name="JetBrains Mono"/>
+      <title-color color="-9001029"/>
+    </border>
+    <children>
+      <component id="9d78f" class="javax.swing.JTextField" binding="fieldName">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="51a7e" class="javax.swing.JSlider" binding="fieldhitPoints">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-6174005"/>
+          <maximum value="25"/>
+          <value value="12"/>
+        </properties>
+      </component>
+      <component id="3e56e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1049601"/>
+          <enabled value="true"/>
+          <font name="Impact" size="48" style="1"/>
+          <foreground color="-1049601"/>
+          <text value="Adventure Creator"/>
+        </properties>
+      </component>
+      <component id="bea7c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial Black" size="14" style="1"/>
+          <foreground color="-1049601"/>
+          <text value="Name"/>
+        </properties>
+      </component>
+      <component id="87f74" class="javax.swing.JButton" binding="updateButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-9001029"/>
+          <font name="Arial Black" size="12" style="1"/>
+          <foreground color="-1049601"/>
+          <hideActionText value="false"/>
+          <icon value="assets/edit.png"/>
+          <text value=""/>
+          <toolTipText value="edit"/>
+          <verticalAlignment value="0"/>
+          <verticalTextPosition value="0"/>
+        </properties>
+      </component>
+      <component id="cf5f6" class="javax.swing.JButton" binding="saveButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-9001029"/>
+          <font name="Arial Black" size="12" style="1"/>
+          <foreground color="-1049601"/>
+          <hideActionText value="false"/>
+          <icon value="assets/heart.png"/>
+          <text value=""/>
+          <toolTipText value="save"/>
+          <verticalAlignment value="0"/>
+          <verticalTextPosition value="0"/>
+        </properties>
+      </component>
+      <scrollpane id="c2684">
+        <constraints>
+          <grid row="1" column="3" row-span="2" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-6174005"/>
+          <foreground color="-1049601"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="32425" class="javax.swing.JTable" binding="characterTable">
+            <constraints/>
+            <properties>
+              <background color="-6174005"/>
+              <font name="Arial Rounded MT Bold" size="12"/>
+              <foreground color="-1049601"/>
+              <gridColor color="-9001029"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="7636a" class="javax.swing.JButton" binding="deleteButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-9001029"/>
+          <font name="Arial Black" size="12" style="1"/>
+          <foreground color="-1049601"/>
+          <hideActionText value="false"/>
+          <icon value="assets/trash.png"/>
+          <text value=""/>
+          <toolTipText value="delete"/>
+          <verticalAlignment value="0"/>
+          <verticalTextPosition value="0"/>
+        </properties>
+      </component>
+      <component id="992a8" class="javax.swing.JTextField" binding="fieldSearch">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="49b59" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1049601"/>
+          <font name="Arial Black" size="14" style="1"/>
+          <foreground color="-1049601"/>
+          <text value="Hitpoints"/>
+        </properties>
+      </component>
+      <component id="461ba" class="javax.swing.JButton" binding="buttonSearch">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-9001029"/>
+          <font name="Arial Black" size="12" style="1"/>
+          <foreground color="-1049601"/>
+          <icon value="assets/loupe.png"/>
+          <text value=""/>
+          <toolTipText value="search"/>
+        </properties>
+      </component>
+      <component id="a9d78" class="javax.swing.JButton" binding="playerButton">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3933253"/>
+          <icon value="assets/player.png"/>
+          <text value=""/>
+          <toolTipText value="create player"/>
+        </properties>
+      </component>
+      <component id="5032" class="javax.swing.JButton" binding="monsterButton">
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-6469570"/>
+          <icon value="assets/monster.png"/>
+          <text value=""/>
+          <toolTipText value="create monster"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
